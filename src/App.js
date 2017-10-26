@@ -3,7 +3,7 @@ import { connect } from "redux-zero/react";
 import { addComment, removeComment } from "./actions";
 import "./App.css";
 
-const Comment = ({ name, comment,avatar, removeComment }) => {
+const Comment = ({name, comment,avatar, removeComment }) => {
   return (
     <div >
       <div className='row' >
@@ -31,9 +31,14 @@ const App = ({ user }) => {
               removeComment = {() => removeComment(b) } 
             />;
   });
+
+
   const onSubmit = e => {
     e.preventDefault();
     addComment(this.nameInputRef.value, this.commentInputRef.value);
+    this.nameInputRef.value = '';
+    this.commentInputRef.value = '';
+    
   };
   return (
     <div>
@@ -65,6 +70,6 @@ const App = ({ user }) => {
     </div>
   );
 };
-const mapToProps = ({ user }) => ({ user });
+const mapToProps = ({user}) => ({ user });
 
 export default connect(mapToProps)(App);
