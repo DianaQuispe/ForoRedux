@@ -1,0 +1,72 @@
+@import url('http://fonts.googleapis.com/css?family=Varela+Round');
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+body {
+    font-weight: bolder;
+    background: #ECEEEF;
+    margin: 100px auto;
+    width: 80%;
+    padding: 0 40px;
+    font: 14px normal 'Varela Round', Helvetica, serif;
+}
+
+.newComment {
+    background: #9fcbd2;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+.colorBlue {
+    color: #6da2a9;
+}
+
+.inputValue {
+    border-radius: 9px;
+    width: 98%;
+}
+
+div {
+    background: #7db398;
+    border-radius: 4px;
+}
+
+div * {
+    margin: 9px;
+}
+
+#postComment {
+    background-color: #fbe783;
+    color: #6da2a9;
+}
+
+#postComment:hover {
+    background-color: #fadd4e;
+    color: #6da2a9;
+}
+
+.comment {
+    font-family: 'Courgette', cursive;
+}
+
+.leter {
+    font-weight: lighter;
+    color: white;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 8px;
+    background: white;
+}
+
+.avatar {
+    height: 120px;
+    width: 130px;
+}
+
+.length {
+    color: #9cc9d0;
+    right: 3px;
+}
